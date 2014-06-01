@@ -1,0 +1,174 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue153;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}\levelprepend{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}\levelprepend{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww36160\viewh21500\viewkind0
+\deftab708
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708
+
+\f0\b\fs36 \cf0 \expnd0\expndtw0\kerning0
+Ro\'92s guide to installing MAMP and WordPress\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708
+
+\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708
+
+\b \cf0 \expnd0\expndtw0\kerning0
+Installation\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\tx20\tx380\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708\li360\fi-360
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+Download and install MAMP\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+Run MAMP. Click on 
+\b \expnd0\expndtw0\kerning0
+Preferneces
+\b0 \expnd0\expndtw0\kerning0
+ - 
+\b \expnd0\expndtw0\kerning0
+Apache
+\b0 \expnd0\expndtw0\kerning0
+ and change the document root to your desired local server root. (In my case 
+\b \expnd0\expndtw0\kerning0
+user/Sites
+\b0 \expnd0\expndtw0\kerning0
+.) Start Servers.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+The MAMP home page will open. Click on phpMyAdmin - Databases and create a new database (e.g. squareparts).\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+Click on 
+\b \expnd0\expndtw0\kerning0
+Users
+\b0 \expnd0\expndtw0\kerning0
+ - 
+\b \expnd0\expndtw0\kerning0
+Add user
+\b0 \expnd0\expndtw0\kerning0
+. Enter username (e.g. wordpress), set host to local (localhost), enter and re-enter password, and click on 
+\b \expnd0\expndtw0\kerning0
+add user
+\b0 \expnd0\expndtw0\kerning0
+.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+Click on 
+\b \expnd0\expndtw0\kerning0
+Edit Privileges
+\b0 \expnd0\expndtw0\kerning0
+ icon for the new user, and scroll down to database-specific privileges. In the drop down select the name of the database you created in step 4, and click the 
+\b \expnd0\expndtw0\kerning0
+check all
+\b0 \expnd0\expndtw0\kerning0
+ button, and then 
+\b \expnd0\expndtw0\kerning0
+go
+\b0 \expnd0\expndtw0\kerning0
+.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	6.	}\expnd0\expndtw0\kerning0
+Download and extract WordPress from {\field{\*\fldinst{HYPERLINK "http://www.wordpress.org"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 www.wordpress.org}}. Copy the contents of the folder to a subfolder (e.g. \'93crazyname\'94) in your site\'92s root directory. (The reasons for this are two-fold, first it will keep the root of our site clean, and second it will add  layer of \'93security through obscurity\'94.)\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	7.	}\expnd0\expndtw0\kerning0
+Locate the file 
+\b \expnd0\expndtw0\kerning0
+wp-config-sample.php
+\b0 \expnd0\expndtw0\kerning0
+ and rename it to 
+\b \expnd0\expndtw0\kerning0
+wp-config.php
+\b0 \expnd0\expndtw0\kerning0
+.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	8.	}\expnd0\expndtw0\kerning0
+Open 
+\b \expnd0\expndtw0\kerning0
+wp-config.php
+\b0 \expnd0\expndtw0\kerning0
+ in a text editor and enter the DB_NAME, DB_USER, and DB_PASSWORD info we have just created in phpMyAdmin.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	9.	}\expnd0\expndtw0\kerning0
+Edit the table prefix as a security measure.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	10.	}\expnd0\expndtw0\kerning0
+Visit 
+\b \expnd0\expndtw0\kerning0
+https://api.wordpress.org/secret-key/1.1/salt/
+\b0 \expnd0\expndtw0\kerning0
+ to generate Authentication Unique Keys and Salts. Copy and paste them from your browser into the relevant section of your 
+\b \expnd0\expndtw0\kerning0
+wp-config.php
+\b0 \expnd0\expndtw0\kerning0
+. Save your revised wp-config.php file.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	11.	}\expnd0\expndtw0\kerning0
+Browse to your site\'92s install.php in a browser. (e.g. localhost:8888/mysite/crazyname/wp-admin/install.php)\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	12.	}\expnd0\expndtw0\kerning0
+Enter the details for your site. 
+\b \expnd0\expndtw0\kerning0
+DO NOT
+\b0 \expnd0\expndtw0\kerning0
+ use admin as the username. \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	13.	}\expnd0\expndtw0\kerning0
+Copy index.php to the root of the site and edit '
+\b \expnd0\expndtw0\kerning0
+./wp-blog-header.php
+\b0 \expnd0\expndtw0\kerning0
+' to read '
+\b \expnd0\expndtw0\kerning0
+./crazyname/wp-blog-header.php
+\b0 \expnd0\expndtw0\kerning0
+'.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	14.	}\expnd0\expndtw0\kerning0
+Lastly, login to WordPress Admin site (
+\b \expnd0\expndtw0\kerning0
+localhost:8888/site/crazysubdomain/wp-admin
+\b0 \expnd0\expndtw0\kerning0
+) and click on 
+\b \expnd0\expndtw0\kerning0
+Settings
+\b0 \expnd0\expndtw0\kerning0
+ - 
+\b \expnd0\expndtw0\kerning0
+General
+\b0 \expnd0\expndtw0\kerning0
+ and change the Site Address (URL) to JUST the site\'92s root (without the crazysubdomain).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708
+\cf0 \expnd0\expndtw0\kerning0
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708
+
+\b \cf0 \expnd0\expndtw0\kerning0
+Getting Started\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\tx20\tx380\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab708\li360\fi-360
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+Change permalink structure in 
+\b \expnd0\expndtw0\kerning0
+Settings
+\b0 \expnd0\expndtw0\kerning0
+ - 
+\b \expnd0\expndtw0\kerning0
+permalinks
+\b0 \expnd0\expndtw0\kerning0
+, this will improve SEO, provide more readable links, and also create a .htaccess file in the root of the site. Do not start a permalink with a post title or category, rather use a number as this will help performance down the line.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+Create Categories and Tags, reassign the default category to something other than uncategorised, and delete uncategorised.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+If a deeper category/tag structure is required, a custom taxonomy can be created for the site. This would be especially useful if teh majority of posts will follow a similar structure. (For example music album reviews.)\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+Create a user named 
+\b \expnd0\expndtw0\kerning0
+admin
+\b0 \expnd0\expndtw0\kerning0
+, but set permissions to 
+\b \expnd0\expndtw0\kerning0
+subscriber level
+\b0 \expnd0\expndtw0\kerning0
+. This will thwart most non-human hacks. Create an ultra secure password for the admin account. (Visit {\field{\*\fldinst{HYPERLINK "https://www.grc.com/passwords.htm"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.grc.com/passwords.htm}} for a generator.)}
