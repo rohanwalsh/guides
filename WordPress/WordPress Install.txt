@@ -1,0 +1,44 @@
+Ro’s guide to installing MAMP and WordPress
+
+
+Installation
+
+1. Download and install MAMP
+
+2. Run MAMP. Click on Preferneces - Apache and change the document root to your desired local server root. (In my case user/Sites.) Start Servers.
+
+3. The MAMP home page will open. Click on phpMyAdmin - Databases and create a new database (e.g. squareparts).
+
+4. Click on Users - Add user. Enter username (e.g. wordpress), set host to local (localhost), enter and re-enter password, and click on add user.
+
+5. Click on Edit Privileges icon for the new user, and scroll down to database-specific privileges. In the drop down select the name of the database you created in step 4, and click the check all button, and then go.
+
+6. Download and extract WordPress from www.wordpress.org. Copy the contents of the folder to a subfolder (e.g. “crazyname”) in your site’s root directory. (The reasons for this are two-fold, first it will keep the root of our site clean, and second it 	will add  layer of “security through obscurity”.)
+
+7. Locate the file wp-config-sample.php and rename it to wp-config.php.
+
+8. Open wp-config.php in a text editor and enter the DB_NAME, DB_USER, and DB_PASSWORD info we have just created in phpMyAdmin.
+
+9. Edit the table prefix as a security measure.
+
+10. Visit https://api.wordpress.org/secret-key/1.1/salt/ to generate Authentication Unique Keys and Salts. Copy and paste them from your browser into the relevant section of your wp-config.php. Save your revised wp-config.php file.
+
+11. Browse to your site’s install.php in a browser. (e.g. localhost:8888/mysite/crazyname/wp-admin/install.php)
+
+12. Enter the details for your site. DO NOT use admin as the username.
+
+13. Copy index.php to the root of the site and edit './wp-blog-header.php' to read './crazyname/wp-blog-header.php'.
+
+14. Lastly, login to WordPress Admin site (localhost:8888/site/crazysubdomain/wp-admin) and click on Settings - General and change the Site Address (URL) to JUST the site’s root (without the crazysubdomain).
+
+
+
+Getting Started
+
+1. Change permalink structure in Settings - permalinks, this will improve SEO, provide more readable links, and also create a .htaccess file in the root of the site. Do not start a permalink with a post title or category, rather use a number as this will help performance down the line.
+
+2. Create Categories and Tags, reassign the default category to something other than uncategorised, and delete uncategorised.
+
+3. If a deeper category/tag structure is required, a custom taxonomy can be created for the site. This would be especially useful if teh majority of posts will follow a similar structure. (For example music album reviews.)
+
+4. Create a user named admin, but set permissions to subscriber level. This will thwart most non-human hacks. Create an ultra secure password for the admin account. (Visit https://www.grc.com/passwords.htm for a generator.)
